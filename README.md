@@ -51,7 +51,7 @@ Note that destreamer won't run in an elevated (Administrator/root) shell. Runnin
 To build destreamer clone this repository, install dependencies and run the build script -
 
 ```sh
-$ git clone https://github.com/snobu/destreamer
+$ git clone https://github.com/SamanFekri/destreamer.git
 $ cd destreamer
 $ npm install
 $ npm run build
