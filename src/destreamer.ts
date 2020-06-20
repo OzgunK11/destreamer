@@ -65,7 +65,7 @@ async function DoInteractiveLogin(url: string, myargv: any): Promise<Session> {
 
         if (myargv.polimicode || myargv.polimipass) {
             await browser.waitForTarget(target => target.url().includes("aunicalogin.polimi.it/"), { timeout: 150000 });
-            await sleep(3000);
+            await sleep(15000);
         }
 
         if (myargv.polimicode) {
@@ -82,7 +82,7 @@ async function DoInteractiveLogin(url: string, myargv: any): Promise<Session> {
             await page.click('button[type="submit"]');
             
             await browser.waitForTarget(target => target.url().includes("login.microsoftonline.com/"), { timeout: 150000 });
-            await sleep(3000);
+            await sleep(15000);
             await page.click('input[type="submit"]');
         }
     }
